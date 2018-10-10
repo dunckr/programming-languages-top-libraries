@@ -1,9 +1,3 @@
-const languages = require("./lib/languages");
-const view = require("./lib/view");
+const daily = require('./data/daily.json');
 
-const libraryDownloads = async () => {
-  const list = await languages();
-  await view(list);
-};
-
-libraryDownloads();
+module.exports = { daily };
