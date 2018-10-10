@@ -2,4 +2,6 @@
 
 ## Downloads
 
+{{>content}}
+
 ## Information
