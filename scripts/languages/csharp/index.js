@@ -29,7 +29,7 @@ const dependency = async url => {
   const res = await fetch(url);
   const text = await res.text();
   const $ = load(text);
-  const [label] = $(".ms-Icon--Download")
+  const [label] = $(".ms-Icon.ms-Icon--Financial")
     .parent()
     .text()
     .trim()

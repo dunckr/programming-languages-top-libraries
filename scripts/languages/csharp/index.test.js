@@ -16,58 +16,58 @@ describe("C#", () => {
     expect(libraries.length).toEqual(10);
     expect(libraries).toEqual([
       {
-        downloads: "151813484",
+        downloads: "53701",
         name: "newtonsoft.json",
         url: "https://www.nuget.org/packages/newtonsoft.json/"
       },
       {
-        downloads: "151813484",
+        downloads: "53701",
         name: "microsoft.extensions.logging.abstractions",
         url:
           "https://www.nuget.org/packages/microsoft.extensions.logging.abstractions/"
       },
       {
-        downloads: "151813484",
+        downloads: "53701",
         name: "microsoft.aspnetcore.hosting.server.abstractions",
         url:
           "https://www.nuget.org/packages/microsoft.aspnetcore.hosting.server.abstractions/"
       },
       {
-        downloads: "151813484",
+        downloads: "53701",
         name: "microsoft.aspnetcore.hosting.abstractions",
         url:
           "https://www.nuget.org/packages/microsoft.aspnetcore.hosting.abstractions/"
       },
       {
-        downloads: "151813484",
+        downloads: "53701",
         name: "microsoft.extensions.configuration.abstractions",
         url:
           "https://www.nuget.org/packages/microsoft.extensions.configuration.abstractions/"
       },
       {
-        downloads: "151813484",
+        downloads: "53701",
         name: "microsoft.aspnetcore.http.features",
         url:
           "https://www.nuget.org/packages/microsoft.aspnetcore.http.features/"
       },
       {
-        downloads: "151813484",
+        downloads: "53701",
         name: "microsoft.aspnetcore.http.abstractions",
         url:
           "https://www.nuget.org/packages/microsoft.aspnetcore.http.abstractions/"
       },
       {
-        downloads: "151813484",
+        downloads: "53701",
         name: "microsoft.extensions.options",
         url: "https://www.nuget.org/packages/microsoft.extensions.options/"
       },
       {
-        downloads: "151813484",
+        downloads: "53701",
         name: "microsoft.extensions.primitives",
         url: "https://www.nuget.org/packages/microsoft.extensions.primitives/"
       },
       {
-        downloads: "151813484",
+        downloads: "53701",
         name: "microsoft.extensions.dependencyinjection.abstractions",
         url:
           "https://www.nuget.org/packages/microsoft.extensions.dependencyinjection.abstractions/"
