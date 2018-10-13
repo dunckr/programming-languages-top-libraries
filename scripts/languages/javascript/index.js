@@ -20,7 +20,7 @@ const dependencies = async () => {
 };
 
 const dependency = async name => {
-  const date = format(startOfYesterday(), "YYYY-DD-MM");
+  const date = format(startOfYesterday(), "YYYY-MM-DD");
   const URL = `https://api.npmjs.org/downloads/point/${date}/${name}`;
   const res = await fetch(URL);
   return await res.json();
