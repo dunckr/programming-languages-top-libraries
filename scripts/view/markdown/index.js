@@ -1,14 +1,18 @@
 const numberWithCommas = number =>
   number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
+const upperCaseFirstLetter = word =>
+  `${word[0].toUpperCase()}${word.substr(1).toLowerCase()}`;
+
 const Row = library => {
+  const name = upperCaseFirstLetter(library.name);
   const downloads = numberWithCommas(library.downloads);
-  return `|\t[${library.name}](${library.url})\t|\t${downloads}\t|`;
+  return `|\t[${name}](${library.url})\t|\t${downloads}\t|`;
 };
 
 const Table = (title, libraries) => {
   const rows = libraries.map(v => Row(v)).join("\n");
-  return `# ${title.toUpperCase()}
+  return `# ${upperCaseFirstLetter(title)}
 
 |\tName\t|\tDownloads\t|
 | ------------- | ------------- |

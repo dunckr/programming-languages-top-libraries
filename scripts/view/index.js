@@ -1,3 +1,4 @@
+const format = require("date-fns/format");
 const fs = require("fs");
 const path = require("path");
 const util = require("util");
@@ -12,8 +13,18 @@ const markdownPathDefault = path.join(__dirname, "../../readme.md");
 const selector = "{{>content}}";
 const template = path.join(__dirname, "template.md");
 
-const view = async (languages, jsonPath = jsonPathDefault, markdownPath = markdownPathDefault) => {
-  await writeFile(jsonPath, JSON.stringify(languages));
+const view = async (
+  languages,
+  jsonPath = jsonPathDefault,
+  markdownPath = markdownPathDefault
+) => {
+  const json = {
+    meta: {
+      date: format(new Date())
+    },
+    languages
+  };
+  await writeFile(jsonPath, JSON.stringify(json));
   const content = markdown(languages);
   const file = await readFile(template);
   const text = file.toString().replace(selector, content);
