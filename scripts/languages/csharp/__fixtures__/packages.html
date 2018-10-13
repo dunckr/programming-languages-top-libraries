@@ -1,0 +1,1353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <title>
+        NuGet Gallery
+        | Package Download Statistics
+    </title>
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link title="NuGet.org" type="application/opensearchdescription+xml" href="/opensearch.xml" rel="search">
+
+    <link href="/Content/gallery/css/site.min.css?v=TQ8vBdoj2aBruLpOYDtJT5RIa23f6VrQkJrRdXRkRh01" rel="stylesheet"/>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-62780441-33', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('set', 'page', '');
+        ga('set', 'title', '');
+        ga('send', 'pageview');
+    </script>
+
+
+
+    <!-- Telemetry -->
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function s(config) {
+                t[config] = function () {
+                    var i = arguments;
+                    t.queue.push(function () { t[config].apply(t, i) })
+                }
+            }
+
+            var t = { config: config }, r = document, f = window, e = "script", o = r.createElement(e), i, u;
+            for (o.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", r.getElementsByTagName(e)[0].parentNode.appendChild(o), t.cookie = r.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) s("track" + i.pop());
+            return config.disableExceptionTracking || (i = "onerror", s("_" + i), u = f[i], f[i] = function (config, r, f, e, o) {
+                var s = u && u(config, r, f, e, o);
+                return s !== !0 && t["_" + i](config, r, f, e, o), s
+            }), t
+        }({
+            instrumentationKey: 'df3a36b9-dfba-401c-82ab-35690083be3e',
+            samplingPercentage: 100
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
+
+</head>
+<body>
+
+
+
+
+
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <a href="#" id="skipToContent" class="showOnFocus" title="Skip To Content">Skip To Content</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/">
+                        <img class="navbar-logo" width="94" height="29" alt="NuGet home"
+                             src="/Content/gallery/img/logo-header.svg"
+                             onerror="this.src='https://www.nuget.org/Content/gallery/img/logo-header-94x29.png'; this.onerror = null;"
+                        />
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" role="tablist">
+                        <li class="" role="presentation">
+                            <a role="tab" aria-selected="false" href="/packages">
+                                <span>Packages</span>
+                            </a>
+                        </li>
+
+                        <li class="" role="presentation">
+                            <a role="tab" aria-selected="false" href="/packages/manage/upload">
+                                <span>Upload</span>
+                            </a>
+                        </li>
+
+                        <li class="active" role="presentation">
+                            <a role="tab" aria-selected="true" href="/stats">
+                                <span>Statistics</span>
+                            </a>
+                        </li>
+                        <li class="" role="presentation">
+                            <a role="tab" aria-selected="false" href="https://docs.microsoft.com/en-us/nuget/what-is-nuget">
+                                <span>Documentation</span>
+                            </a>
+                        </li>
+
+                        <li class="" role="presentation">
+                            <a role="tab" aria-selected="false" href="/downloads">
+                                <span>Downloads</span>
+                            </a>
+                        </li>
+
+                        <li class="" role="presentation">
+                            <a role="tab" aria-selected="false" href="https://blog.nuget.org/">
+                                <span>Blog</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right" role="tablist">
+                        <li class="" role="presentation">
+                            <a role="tab" aria-selected="false" href="/users/account/LogOn?returnUrl=%2Fstats%2Fpackages" title="Sign in to an existing NuGet.org account">
+                                <span>Sign in</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container search-container">
+        <div class="row">
+            <form aria-label="Package search bar" class="col-sm-12" action="/packages" method="get">
+                <div class="input-group">
+                    <input name="q" type="text" class="form-control" id="search" aria-label="Enter packages to search"
+                           placeholder="Search for packages..." autocomplete="off"
+                           value=""
+                    />
+                    <span class="input-group-btn">
+        <button class="btn btn-default btn-warning btn-search" type="submit"
+                title="Search for packages" aria-label="Search">
+            <span class="ms-Icon ms-Icon--Search" aria-hidden="true"></span>
+        </button>
+    </span>
+                </div>
+                <div id="autocomplete-results-container" class="text-left" tabindex="0"></div>
+
+                <script type="text/html" id="autocomplete-results-row">
+                    <!-- ko if: $data -->
+                    <!-- ko if: $data.PackageRegistration -->
+                    <div class="col-sm-4 autocomplete-row-id autocomplete-row-data">
+                        <span data-bind="attr: { id: 'autocomplete-result-id-' + $data.PackageRegistration.Id, title: $data.PackageRegistration.Id }, text: $data.PackageRegistration.Id"></span>
+                    </div>
+                    <div class="col-sm-4 autocomplete-row-downloadcount text-right autocomplete-row-data">
+                        <span data-bind="text: $data.DownloadCount + ' downloads'"></span>
+                    </div>
+                    <div class="col-sm-4 autocomplete-row-owners text-left autocomplete-row-data">
+                        <span data-bind="text: $data.OwnersString + ' '"></span>
+                    </div>
+                    <!-- /ko -->
+                    <!-- ko ifnot: $data.PackageRegistration -->
+                    <div class="col-sm-12 autocomplete-row-id autocomplete-row-data">
+                        <span data-bind="attr: { id: 'autocomplete-result-id-' + $data, title: $data  }, text: $data"></span>
+                    </div>
+                    <!-- /ko -->
+                    <!-- /ko -->
+                </script>
+
+                <script type="text/html" id="autocomplete-results-template">
+                    <!-- ko if: $data.data.length > 0 -->
+                    <div data-bind="foreach: $data.data" id="autocomplete-results-list">
+                        <a data-bind="attr: { id: 'autocomplete-result-row-' + $data, href: '/packages/' + $data, title: $data }" tabindex="-1">
+                            <div data-bind="attr:{ id: 'autocomplete-container-' + $data }" class="autocomplete-results-row">
+                            </div>
+                        </a>
+                    </div>
+                    <!-- /ko -->
+                </script>
+
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+<div id="skippedToContent">
+
+
+
+
+    <section role="main" class="container main-container page-statistics-most-downloaded">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Most Downloaded Packages</h1>
+
+                <span class="ms-fontSize-l" data-bind="text: showAllPackageDownloads() ? 'Top 100 Packages Over the Last 6 Weeks' : 'Top 100 Community Packages Over the Last 6 Weeks'">
+                Top 100 Community Packages Over the Last 6 Weeks
+            </span>
+                <label class="show-all-packages-toggle pull-right">
+                    <input type="checkbox" data-bind="checked: showAllPackageDownloads" />
+                    Show all packages
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <table     style="display:none;" data-bind="visible: showAllPackageDownloads"
+                           class="table borderless">
+                    <caption class="sr-only">The packages with the most downloads.</caption>
+
+                    <thead>
+                    <tr class="packages">
+                        <th scope="col">&nbsp;<span class="sr-only">#</span></th>
+                        <th scope="col">Package</th>
+                        <th scope="col">Downloads</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td scope="row">1</td>
+                        <td><a href="/packages/newtonsoft.json/">newtonsoft.json</a></td>
+                        <td><a href="/stats/packages/newtonsoft.json?groupby=Version">9,520,012</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">2</td>
+                        <td><a href="/packages/microsoft.extensions.logging.abstractions/">microsoft.extensions.logging.abstractions</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.logging.abstractions?groupby=Version">7,244,320</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">3</td>
+                        <td><a href="/packages/microsoft.aspnetcore.hosting.server.abstractions/">microsoft.aspnetcore.hosting.server.abstractions</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.hosting.server.abstractions?groupby=Version">7,113,429</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">4</td>
+                        <td><a href="/packages/microsoft.aspnetcore.hosting.abstractions/">microsoft.aspnetcore.hosting.abstractions</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.hosting.abstractions?groupby=Version">7,111,082</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">5</td>
+                        <td><a href="/packages/microsoft.extensions.configuration.abstractions/">microsoft.extensions.configuration.abstractions</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.configuration.abstractions?groupby=Version">7,015,735</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">6</td>
+                        <td><a href="/packages/microsoft.aspnetcore.http.features/">microsoft.aspnetcore.http.features</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.http.features?groupby=Version">6,756,349</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">7</td>
+                        <td><a href="/packages/microsoft.aspnetcore.http.abstractions/">microsoft.aspnetcore.http.abstractions</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.http.abstractions?groupby=Version">6,694,622</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">8</td>
+                        <td><a href="/packages/microsoft.extensions.options/">microsoft.extensions.options</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.options?groupby=Version">6,693,031</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">9</td>
+                        <td><a href="/packages/microsoft.extensions.primitives/">microsoft.extensions.primitives</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.primitives?groupby=Version">6,541,865</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">10</td>
+                        <td><a href="/packages/microsoft.extensions.dependencyinjection.abstractions/">microsoft.extensions.dependencyinjection.abstractions</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.dependencyinjection.abstractions?groupby=Version">6,270,080</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">11</td>
+                        <td><a href="/packages/microsoft.net.http.headers/">microsoft.net.http.headers</a></td>
+                        <td><a href="/stats/packages/microsoft.net.http.headers?groupby=Version">6,144,617</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">12</td>
+                        <td><a href="/packages/microsoft.extensions.fileproviders.abstractions/">microsoft.extensions.fileproviders.abstractions</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.fileproviders.abstractions?groupby=Version">6,024,973</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">13</td>
+                        <td><a href="/packages/microsoft.aspnetcore.http.extensions/">microsoft.aspnetcore.http.extensions</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.http.extensions?groupby=Version">5,910,302</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">14</td>
+                        <td><a href="/packages/microsoft.aspnetcore.webutilities/">microsoft.aspnetcore.webutilities</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.webutilities?groupby=Version">5,860,598</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">15</td>
+                        <td><a href="/packages/microsoft.aspnetcore.http/">microsoft.aspnetcore.http</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.http?groupby=Version">5,711,844</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">16</td>
+                        <td><a href="/packages/microsoft.extensions.logging/">microsoft.extensions.logging</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.logging?groupby=Version">4,859,808</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">17</td>
+                        <td><a href="/packages/microsoft.netcore.platforms/">microsoft.netcore.platforms</a></td>
+                        <td><a href="/stats/packages/microsoft.netcore.platforms?groupby=Version">4,758,902</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">18</td>
+                        <td><a href="/packages/microsoft.extensions.configuration/">microsoft.extensions.configuration</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.configuration?groupby=Version">4,507,923</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">19</td>
+                        <td><a href="/packages/microsoft.extensions.dependencymodel/">microsoft.extensions.dependencymodel</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.dependencymodel?groupby=Version">4,421,756</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">20</td>
+                        <td><a href="/packages/system.net.http/">system.net.http</a></td>
+                        <td><a href="/stats/packages/system.net.http?groupby=Version">4,350,374</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">21</td>
+                        <td><a href="/packages/microsoft.extensions.objectpool/">microsoft.extensions.objectpool</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.objectpool?groupby=Version">4,339,261</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">22</td>
+                        <td><a href="/packages/system.diagnostics.diagnosticsource/">system.diagnostics.diagnosticsource</a></td>
+                        <td><a href="/stats/packages/system.diagnostics.diagnosticsource?groupby=Version">4,320,303</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">23</td>
+                        <td><a href="/packages/system.componentmodel.annotations/">system.componentmodel.annotations</a></td>
+                        <td><a href="/stats/packages/system.componentmodel.annotations?groupby=Version">4,285,386</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">24</td>
+                        <td><a href="/packages/microsoft.extensions.filesystemglobbing/">microsoft.extensions.filesystemglobbing</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.filesystemglobbing?groupby=Version">4,213,908</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">25</td>
+                        <td><a href="/packages/system.text.encodings.web/">system.text.encodings.web</a></td>
+                        <td><a href="/stats/packages/system.text.encodings.web?groupby=Version">4,206,097</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">26</td>
+                        <td><a href="/packages/system.threading.tasks.extensions/">system.threading.tasks.extensions</a></td>
+                        <td><a href="/stats/packages/system.threading.tasks.extensions?groupby=Version">4,065,789</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">27</td>
+                        <td><a href="/packages/microsoft.extensions.fileproviders.physical/">microsoft.extensions.fileproviders.physical</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.fileproviders.physical?groupby=Version">4,048,425</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">28</td>
+                        <td><a href="/packages/microsoft.aspnetcore.mvc.abstractions/">microsoft.aspnetcore.mvc.abstractions</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.mvc.abstractions?groupby=Version">4,023,680</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">29</td>
+                        <td><a href="/packages/microsoft.aspnetcore.mvc.core/">microsoft.aspnetcore.mvc.core</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.mvc.core?groupby=Version">3,999,597</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">30</td>
+                        <td><a href="/packages/system.linq.expressions/">system.linq.expressions</a></td>
+                        <td><a href="/stats/packages/system.linq.expressions?groupby=Version">3,953,853</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">31</td>
+                        <td><a href="/packages/system.collections.immutable/">system.collections.immutable</a></td>
+                        <td><a href="/stats/packages/system.collections.immutable?groupby=Version">3,953,635</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">32</td>
+                        <td><a href="/packages/microsoft.netcore.targets/">microsoft.netcore.targets</a></td>
+                        <td><a href="/stats/packages/microsoft.netcore.targets?groupby=Version">3,924,607</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">33</td>
+                        <td><a href="/packages/microsoft.aspnetcore.authorization/">microsoft.aspnetcore.authorization</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.authorization?groupby=Version">3,909,005</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">34</td>
+                        <td><a href="/packages/microsoft.aspnetcore.routing.abstractions/">microsoft.aspnetcore.routing.abstractions</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.routing.abstractions?groupby=Version">3,885,859</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">35</td>
+                        <td><a href="/packages/microsoft.extensions.dependencyinjection/">microsoft.extensions.dependencyinjection</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.dependencyinjection?groupby=Version">3,811,364</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">36</td>
+                        <td><a href="/packages/netstandard.library/">netstandard.library</a></td>
+                        <td><a href="/stats/packages/netstandard.library?groupby=Version">3,728,452</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">37</td>
+                        <td><a href="/packages/system.security.principal.windows/">system.security.principal.windows</a></td>
+                        <td><a href="/stats/packages/system.security.principal.windows?groupby=Version">3,689,008</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">38</td>
+                        <td><a href="/packages/microsoft.aspnetcore.mvc.formatters.json/">microsoft.aspnetcore.mvc.formatters.json</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.mvc.formatters.json?groupby=Version">3,658,785</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">39</td>
+                        <td><a href="/packages/microsoft.aspnetcore.routing/">microsoft.aspnetcore.routing</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.routing?groupby=Version">3,653,610</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">40</td>
+                        <td><a href="/packages/microsoft.netcore.app/">microsoft.netcore.app</a></td>
+                        <td><a href="/stats/packages/microsoft.netcore.app?groupby=Version">3,623,089</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">41</td>
+                        <td><a href="/packages/system.componentmodel/">system.componentmodel</a></td>
+                        <td><a href="/stats/packages/system.componentmodel?groupby=Version">3,620,475</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">42</td>
+                        <td><a href="/packages/microsoft.netcore.dotnethostpolicy/">microsoft.netcore.dotnethostpolicy</a></td>
+                        <td><a href="/stats/packages/microsoft.netcore.dotnethostpolicy?groupby=Version">3,582,072</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">43</td>
+                        <td><a href="/packages/system.reflection.metadata/">system.reflection.metadata</a></td>
+                        <td><a href="/stats/packages/system.reflection.metadata?groupby=Version">3,563,289</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">44</td>
+                        <td><a href="/packages/system.runtime.compilerservices.unsafe/">system.runtime.compilerservices.unsafe</a></td>
+                        <td><a href="/stats/packages/system.runtime.compilerservices.unsafe?groupby=Version">3,540,582</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">45</td>
+                        <td><a href="/packages/microsoft.aspnetcore.mvc.dataannotations/">microsoft.aspnetcore.mvc.dataannotations</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.mvc.dataannotations?groupby=Version">3,532,517</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">46</td>
+                        <td><a href="/packages/system.security.cryptography.x509certificates/">system.security.cryptography.x509certificates</a></td>
+                        <td><a href="/stats/packages/system.security.cryptography.x509certificates?groupby=Version">3,524,200</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">47</td>
+                        <td><a href="/packages/microsoft.win32.registry/">microsoft.win32.registry</a></td>
+                        <td><a href="/stats/packages/microsoft.win32.registry?groupby=Version">3,494,871</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">48</td>
+                        <td><a href="/packages/microsoft.aspnetcore.mvc.apiexplorer/">microsoft.aspnetcore.mvc.apiexplorer</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.mvc.apiexplorer?groupby=Version">3,468,546</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">49</td>
+                        <td><a href="/packages/castle.core/">castle.core</a></td>
+                        <td><a href="/stats/packages/castle.core?groupby=Version">3,447,059</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">50</td>
+                        <td><a href="/packages/system.net.requests/">system.net.requests</a></td>
+                        <td><a href="/stats/packages/system.net.requests?groupby=Version">3,396,348</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">51</td>
+                        <td><a href="/packages/microsoft.netcore.dotnethostresolver/">microsoft.netcore.dotnethostresolver</a></td>
+                        <td><a href="/stats/packages/microsoft.netcore.dotnethostresolver?groupby=Version">3,385,373</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">52</td>
+                        <td><a href="/packages/system.buffers/">system.buffers</a></td>
+                        <td><a href="/stats/packages/system.buffers?groupby=Version">3,370,999</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">53</td>
+                        <td><a href="/packages/microsoft.extensions.configuration.environmentvariables/">microsoft.extensions.configuration.environmentvariables</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.configuration.environmentvariables?groupby=Version">3,301,383</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">54</td>
+                        <td><a href="/packages/microsoft.aspnetcore.server.kestrel/">microsoft.aspnetcore.server.kestrel</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.server.kestrel?groupby=Version">3,246,242</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">55</td>
+                        <td><a href="/packages/microsoft.aspnetcore.hosting/">microsoft.aspnetcore.hosting</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.hosting?groupby=Version">3,183,382</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">56</td>
+                        <td><a href="/packages/microsoft.extensions.hosting.abstractions/">microsoft.extensions.hosting.abstractions</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.hosting.abstractions?groupby=Version">3,167,696</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">57</td>
+                        <td><a href="/packages/microsoft.extensions.webencoders/">microsoft.extensions.webencoders</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.webencoders?groupby=Version">3,147,320</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">58</td>
+                        <td><a href="/packages/microsoft.csharp/">microsoft.csharp</a></td>
+                        <td><a href="/stats/packages/microsoft.csharp?groupby=Version">3,126,143</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">59</td>
+                        <td><a href="/packages/microsoft.extensions.caching.abstractions/">microsoft.extensions.caching.abstractions</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.caching.abstractions?groupby=Version">3,122,596</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">60</td>
+                        <td><a href="/packages/microsoft.dotnet.platformabstractions/">microsoft.dotnet.platformabstractions</a></td>
+                        <td><a href="/stats/packages/microsoft.dotnet.platformabstractions?groupby=Version">3,120,686</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">61</td>
+                        <td><a href="/packages/system.reflection.typeextensions/">system.reflection.typeextensions</a></td>
+                        <td><a href="/stats/packages/system.reflection.typeextensions?groupby=Version">3,062,020</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">62</td>
+                        <td><a href="/packages/microsoft.extensions.caching.memory/">microsoft.extensions.caching.memory</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.caching.memory?groupby=Version">3,036,495</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">63</td>
+                        <td><a href="/packages/microsoft.extensions.localization.abstractions/">microsoft.extensions.localization.abstractions</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.localization.abstractions?groupby=Version">3,035,734</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">64</td>
+                        <td><a href="/packages/microsoft.extensions.localization/">microsoft.extensions.localization</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.localization?groupby=Version">3,031,288</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">65</td>
+                        <td><a href="/packages/system.numerics.vectors/">system.numerics.vectors</a></td>
+                        <td><a href="/stats/packages/system.numerics.vectors?groupby=Version">3,026,664</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">66</td>
+                        <td><a href="/packages/system.net.webheadercollection/">system.net.webheadercollection</a></td>
+                        <td><a href="/stats/packages/system.net.webheadercollection?groupby=Version">2,969,008</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">67</td>
+                        <td><a href="/packages/moq/">moq</a></td>
+                        <td><a href="/stats/packages/moq?groupby=Version">2,966,505</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">68</td>
+                        <td><a href="/packages/system.security.claims/">system.security.claims</a></td>
+                        <td><a href="/stats/packages/system.security.claims?groupby=Version">2,962,782</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">69</td>
+                        <td><a href="/packages/microsoft.aspnet.webapi.client/">microsoft.aspnet.webapi.client</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnet.webapi.client?groupby=Version">2,931,551</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">70</td>
+                        <td><a href="/packages/system.threading.overlapped/">system.threading.overlapped</a></td>
+                        <td><a href="/stats/packages/system.threading.overlapped?groupby=Version">2,922,347</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">71</td>
+                        <td><a href="/packages/system.linq.queryable/">system.linq.queryable</a></td>
+                        <td><a href="/stats/packages/system.linq.queryable?groupby=Version">2,920,962</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">72</td>
+                        <td><a href="/packages/system.runtime/">system.runtime</a></td>
+                        <td><a href="/stats/packages/system.runtime?groupby=Version">2,883,782</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">73</td>
+                        <td><a href="/packages/runtime.native.system.security.cryptography/">runtime.native.system.security.cryptography</a></td>
+                        <td><a href="/stats/packages/runtime.native.system.security.cryptography?groupby=Version">2,867,765</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">74</td>
+                        <td><a href="/packages/system.valuetuple/">system.valuetuple</a></td>
+                        <td><a href="/stats/packages/system.valuetuple?groupby=Version">2,840,366</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">75</td>
+                        <td><a href="/packages/system.security.cryptography.algorithms/">system.security.cryptography.algorithms</a></td>
+                        <td><a href="/stats/packages/system.security.cryptography.algorithms?groupby=Version">2,813,632</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">76</td>
+                        <td><a href="/packages/system.runtime.extensions/">system.runtime.extensions</a></td>
+                        <td><a href="/stats/packages/system.runtime.extensions?groupby=Version">2,799,643</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">77</td>
+                        <td><a href="/packages/system.diagnostics.debug/">system.diagnostics.debug</a></td>
+                        <td><a href="/stats/packages/system.diagnostics.debug?groupby=Version">2,778,867</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">78</td>
+                        <td><a href="/packages/system.globalization/">system.globalization</a></td>
+                        <td><a href="/stats/packages/system.globalization?groupby=Version">2,743,482</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">79</td>
+                        <td><a href="/packages/system.collections/">system.collections</a></td>
+                        <td><a href="/stats/packages/system.collections?groupby=Version">2,743,318</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">80</td>
+                        <td><a href="/packages/libuv/">libuv</a></td>
+                        <td><a href="/stats/packages/libuv?groupby=Version">2,742,698</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">81</td>
+                        <td><a href="/packages/microsoft.extensions.configuration.fileextensions/">microsoft.extensions.configuration.fileextensions</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.configuration.fileextensions?groupby=Version">2,742,511</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">82</td>
+                        <td><a href="/packages/system.linq/">system.linq</a></td>
+                        <td><a href="/stats/packages/system.linq?groupby=Version">2,738,472</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">83</td>
+                        <td><a href="/packages/system.reflection/">system.reflection</a></td>
+                        <td><a href="/stats/packages/system.reflection?groupby=Version">2,734,990</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">84</td>
+                        <td><a href="/packages/system.threading/">system.threading</a></td>
+                        <td><a href="/stats/packages/system.threading?groupby=Version">2,728,388</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">85</td>
+                        <td><a href="/packages/system.text.encoding.codepages/">system.text.encoding.codepages</a></td>
+                        <td><a href="/stats/packages/system.text.encoding.codepages?groupby=Version">2,723,827</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">86</td>
+                        <td><a href="/packages/system.threading.thread/">system.threading.thread</a></td>
+                        <td><a href="/stats/packages/system.threading.thread?groupby=Version">2,719,573</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">87</td>
+                        <td><a href="/packages/system.io/">system.io</a></td>
+                        <td><a href="/stats/packages/system.io?groupby=Version">2,705,379</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">88</td>
+                        <td><a href="/packages/system.resources.resourcemanager/">system.resources.resourcemanager</a></td>
+                        <td><a href="/stats/packages/system.resources.resourcemanager?groupby=Version">2,689,211</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">89</td>
+                        <td><a href="/packages/microsoft.codeanalysis.common/">microsoft.codeanalysis.common</a></td>
+                        <td><a href="/stats/packages/microsoft.codeanalysis.common?groupby=Version">2,684,320</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">90</td>
+                        <td><a href="/packages/microsoft.codeanalysis.csharp/">microsoft.codeanalysis.csharp</a></td>
+                        <td><a href="/stats/packages/microsoft.codeanalysis.csharp?groupby=Version">2,675,697</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">91</td>
+                        <td><a href="/packages/system.net.websockets/">system.net.websockets</a></td>
+                        <td><a href="/stats/packages/system.net.websockets?groupby=Version">2,647,156</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">92</td>
+                        <td><a href="/packages/system.xml.xpath/">system.xml.xpath</a></td>
+                        <td><a href="/stats/packages/system.xml.xpath?groupby=Version">2,639,408</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">93</td>
+                        <td><a href="/packages/system.identitymodel.tokens.jwt/">system.identitymodel.tokens.jwt</a></td>
+                        <td><a href="/stats/packages/system.identitymodel.tokens.jwt?groupby=Version">2,611,164</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">94</td>
+                        <td><a href="/packages/system.threading.tasks/">system.threading.tasks</a></td>
+                        <td><a href="/stats/packages/system.threading.tasks?groupby=Version">2,609,881</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">95</td>
+                        <td><a href="/packages/system.diagnostics.tracesource/">system.diagnostics.tracesource</a></td>
+                        <td><a href="/stats/packages/system.diagnostics.tracesource?groupby=Version">2,604,211</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">96</td>
+                        <td><a href="/packages/system.runtime.loader/">system.runtime.loader</a></td>
+                        <td><a href="/stats/packages/system.runtime.loader?groupby=Version">2,596,429</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">97</td>
+                        <td><a href="/packages/microsoft.extensions.configuration.binder/">microsoft.extensions.configuration.binder</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.configuration.binder?groupby=Version">2,572,180</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">98</td>
+                        <td><a href="/packages/system.text.encoding/">system.text.encoding</a></td>
+                        <td><a href="/stats/packages/system.text.encoding?groupby=Version">2,567,084</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">99</td>
+                        <td><a href="/packages/system.reflection.extensions/">system.reflection.extensions</a></td>
+                        <td><a href="/stats/packages/system.reflection.extensions?groupby=Version">2,563,062</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">100</td>
+                        <td><a href="/packages/microsoft.extensions.configuration.json/">microsoft.extensions.configuration.json</a></td>
+                        <td><a href="/stats/packages/microsoft.extensions.configuration.json?groupby=Version">2,554,391</a></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+                <table     data-bind="visible: !showAllPackageDownloads()"
+                           class="table borderless">
+                    <caption class="sr-only">The community packages with the most downloads.</caption>
+
+                    <thead>
+                    <tr class="packages">
+                        <th scope="col">&nbsp;<span class="sr-only">#</span></th>
+                        <th scope="col">Package</th>
+                        <th scope="col">Downloads</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td scope="row">1</td>
+                        <td><a href="/packages/newtonsoft.json/">newtonsoft.json</a></td>
+                        <td><a href="/stats/packages/newtonsoft.json?groupby=Version">9,520,012</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">2</td>
+                        <td><a href="/packages/castle.core/">castle.core</a></td>
+                        <td><a href="/stats/packages/castle.core?groupby=Version">3,447,059</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">3</td>
+                        <td><a href="/packages/moq/">moq</a></td>
+                        <td><a href="/stats/packages/moq?groupby=Version">2,966,505</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">4</td>
+                        <td><a href="/packages/serilog/">serilog</a></td>
+                        <td><a href="/stats/packages/serilog?groupby=Version">2,214,509</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">5</td>
+                        <td><a href="/packages/xunit.extensibility.core/">xunit.extensibility.core</a></td>
+                        <td><a href="/stats/packages/xunit.extensibility.core?groupby=Version">2,088,629</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">6</td>
+                        <td><a href="/packages/automapper/">automapper</a></td>
+                        <td><a href="/stats/packages/automapper?groupby=Version">2,074,505</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">7</td>
+                        <td><a href="/packages/nunit/">nunit</a></td>
+                        <td><a href="/stats/packages/nunit?groupby=Version">2,019,771</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">8</td>
+                        <td><a href="/packages/xunit.core/">xunit.core</a></td>
+                        <td><a href="/stats/packages/xunit.core?groupby=Version">2,000,101</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">9</td>
+                        <td><a href="/packages/xunit.extensibility.execution/">xunit.extensibility.execution</a></td>
+                        <td><a href="/stats/packages/xunit.extensibility.execution?groupby=Version">1,990,257</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">10</td>
+                        <td><a href="/packages/xunit.assert/">xunit.assert</a></td>
+                        <td><a href="/stats/packages/xunit.assert?groupby=Version">1,976,345</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">11</td>
+                        <td><a href="/packages/xunit/">xunit</a></td>
+                        <td><a href="/stats/packages/xunit?groupby=Version">1,967,941</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">12</td>
+                        <td><a href="/packages/xunit.abstractions/">xunit.abstractions</a></td>
+                        <td><a href="/stats/packages/xunit.abstractions?groupby=Version">1,961,620</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">13</td>
+                        <td><a href="/packages/xunit.runner.visualstudio/">xunit.runner.visualstudio</a></td>
+                        <td><a href="/stats/packages/xunit.runner.visualstudio?groupby=Version">1,732,571</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">14</td>
+                        <td><a href="/packages/jquery/">jquery</a></td>
+                        <td><a href="/stats/packages/jquery?groupby=Version">1,714,942</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">15</td>
+                        <td><a href="/packages/xunit.analyzers/">xunit.analyzers</a></td>
+                        <td><a href="/stats/packages/xunit.analyzers?groupby=Version">1,595,946</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">16</td>
+                        <td><a href="/packages/awssdk.core/">awssdk.core</a></td>
+                        <td><a href="/stats/packages/awssdk.core?groupby=Version">1,454,297</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">17</td>
+                        <td><a href="/packages/nlog/">nlog</a></td>
+                        <td><a href="/stats/packages/nlog?groupby=Version">1,434,304</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">18</td>
+                        <td><a href="/packages/autofac/">autofac</a></td>
+                        <td><a href="/stats/packages/autofac?groupby=Version">1,391,839</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">19</td>
+                        <td><a href="/packages/log4net/">log4net</a></td>
+                        <td><a href="/stats/packages/log4net?groupby=Version">1,317,436</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">20</td>
+                        <td><a href="/packages/swashbuckle.aspnetcore.swagger/">swashbuckle.aspnetcore.swagger</a></td>
+                        <td><a href="/stats/packages/swashbuckle.aspnetcore.swagger?groupby=Version">1,290,786</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">21</td>
+                        <td><a href="/packages/swashbuckle.aspnetcore.swaggergen/">swashbuckle.aspnetcore.swaggergen</a></td>
+                        <td><a href="/stats/packages/swashbuckle.aspnetcore.swaggergen?groupby=Version">1,280,405</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">22</td>
+                        <td><a href="/packages/antlr/">antlr</a></td>
+                        <td><a href="/stats/packages/antlr?groupby=Version">1,277,293</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">23</td>
+                        <td><a href="/packages/owin/">owin</a></td>
+                        <td><a href="/stats/packages/owin?groupby=Version">1,275,471</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">24</td>
+                        <td><a href="/packages/microsoft.aspnetcore.connections.abstractions/">microsoft.aspnetcore.connections.abstractions</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.connections.abstractions?groupby=Version">1,242,316</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">25</td>
+                        <td><a href="/packages/swashbuckle.aspnetcore.swaggerui/">swashbuckle.aspnetcore.swaggerui</a></td>
+                        <td><a href="/stats/packages/swashbuckle.aspnetcore.swaggerui?groupby=Version">1,223,983</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">26</td>
+                        <td><a href="/packages/fluentassertions/">fluentassertions</a></td>
+                        <td><a href="/stats/packages/fluentassertions?groupby=Version">1,220,258</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">27</td>
+                        <td><a href="/packages/swashbuckle.aspnetcore/">swashbuckle.aspnetcore</a></td>
+                        <td><a href="/stats/packages/swashbuckle.aspnetcore?groupby=Version">1,134,359</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">28</td>
+                        <td><a href="/packages/dapper/">dapper</a></td>
+                        <td><a href="/stats/packages/dapper?groupby=Version">1,133,711</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">29</td>
+                        <td><a href="/packages/microsoft.entityframeworkcore.abstractions/">microsoft.entityframeworkcore.abstractions</a></td>
+                        <td><a href="/stats/packages/microsoft.entityframeworkcore.abstractions?groupby=Version">1,113,948</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">30</td>
+                        <td><a href="/packages/microsoft.entityframeworkcore.analyzers/">microsoft.entityframeworkcore.analyzers</a></td>
+                        <td><a href="/stats/packages/microsoft.entityframeworkcore.analyzers?groupby=Version">1,103,554</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">31</td>
+                        <td><a href="/packages/restsharp/">restsharp</a></td>
+                        <td><a href="/stats/packages/restsharp?groupby=Version">1,028,133</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">32</td>
+                        <td><a href="/packages/bootstrap/">bootstrap</a></td>
+                        <td><a href="/stats/packages/bootstrap?groupby=Version">1,024,011</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">33</td>
+                        <td><a href="/packages/webactivatorex/">webactivatorex</a></td>
+                        <td><a href="/stats/packages/webactivatorex?groupby=Version">968,640</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">34</td>
+                        <td><a href="/packages/identitymodel/">identitymodel</a></td>
+                        <td><a href="/stats/packages/identitymodel?groupby=Version">967,142</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">35</td>
+                        <td><a href="/packages/modernizr/">modernizr</a></td>
+                        <td><a href="/stats/packages/modernizr?groupby=Version">958,712</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">36</td>
+                        <td><a href="/packages/jquery.validation/">jquery.validation</a></td>
+                        <td><a href="/stats/packages/jquery.validation?groupby=Version">891,657</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">37</td>
+                        <td><a href="/packages/serilog.extensions.logging/">serilog.extensions.logging</a></td>
+                        <td><a href="/stats/packages/serilog.extensions.logging?groupby=Version">890,866</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">38</td>
+                        <td><a href="/packages/polly/">polly</a></td>
+                        <td><a href="/stats/packages/polly?groupby=Version">872,918</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">39</td>
+                        <td><a href="/packages/microsoft.aspnetcore.http.connections.common/">microsoft.aspnetcore.http.connections.common</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.http.connections.common?groupby=Version">871,912</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">40</td>
+                        <td><a href="/packages/microsoft.aspnetcore.signalr.protocols.json/">microsoft.aspnetcore.signalr.protocols.json</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.signalr.protocols.json?groupby=Version">871,594</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">41</td>
+                        <td><a href="/packages/commonservicelocator/">commonservicelocator</a></td>
+                        <td><a href="/stats/packages/commonservicelocator?groupby=Version">857,523</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">42</td>
+                        <td><a href="/packages/serilog.sinks.file/">serilog.sinks.file</a></td>
+                        <td><a href="/stats/packages/serilog.sinks.file?groupby=Version">857,082</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">43</td>
+                        <td><a href="/packages/microsoft.aspnetcore.http.connections/">microsoft.aspnetcore.http.connections</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.http.connections?groupby=Version">856,148</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">44</td>
+                        <td><a href="/packages/fluentvalidation/">fluentvalidation</a></td>
+                        <td><a href="/stats/packages/fluentvalidation?groupby=Version">811,391</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">45</td>
+                        <td><a href="/packages/nunit3testadapter/">nunit3testadapter</a></td>
+                        <td><a href="/stats/packages/nunit3testadapter?groupby=Version">806,323</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">46</td>
+                        <td><a href="/packages/unity/">unity</a></td>
+                        <td><a href="/stats/packages/unity?groupby=Version">784,399</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">47</td>
+                        <td><a href="/packages/microsoft.aspnetcore.identity.ui/">microsoft.aspnetcore.identity.ui</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.identity.ui?groupby=Version">783,307</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">48</td>
+                        <td><a href="/packages/serilog.sinks.console/">serilog.sinks.console</a></td>
+                        <td><a href="/stats/packages/serilog.sinks.console?groupby=Version">781,088</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">49</td>
+                        <td><a href="/packages/remotion.linq/">remotion.linq</a></td>
+                        <td><a href="/stats/packages/remotion.linq?groupby=Version">761,732</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">50</td>
+                        <td><a href="/packages/htmlagilitypack/">htmlagilitypack</a></td>
+                        <td><a href="/stats/packages/htmlagilitypack?groupby=Version">723,879</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">51</td>
+                        <td><a href="/packages/awssdk.s3/">awssdk.s3</a></td>
+                        <td><a href="/stats/packages/awssdk.s3?groupby=Version">692,200</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">52</td>
+                        <td><a href="/packages/stackexchange.redis.strongname/">stackexchange.redis.strongname</a></td>
+                        <td><a href="/stats/packages/stackexchange.redis.strongname?groupby=Version">683,618</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">53</td>
+                        <td><a href="/packages/stackexchange.redis/">stackexchange.redis</a></td>
+                        <td><a href="/stats/packages/stackexchange.redis?groupby=Version">671,468</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">54</td>
+                        <td><a href="/packages/respond/">respond</a></td>
+                        <td><a href="/stats/packages/respond?groupby=Version">644,651</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">55</td>
+                        <td><a href="/packages/rabbitmq.client/">rabbitmq.client</a></td>
+                        <td><a href="/stats/packages/rabbitmq.client?groupby=Version">644,410</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">56</td>
+                        <td><a href="/packages/npgsql/">npgsql</a></td>
+                        <td><a href="/stats/packages/npgsql?groupby=Version">632,763</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">57</td>
+                        <td><a href="/packages/swashbuckle.core/">swashbuckle.core</a></td>
+                        <td><a href="/stats/packages/swashbuckle.core?groupby=Version">617,986</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">58</td>
+                        <td><a href="/packages/dotnet-xunit/">dotnet-xunit</a></td>
+                        <td><a href="/stats/packages/dotnet-xunit?groupby=Version">587,571</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">59</td>
+                        <td><a href="/packages/serilog.sinks.periodicbatching/">serilog.sinks.periodicbatching</a></td>
+                        <td><a href="/stats/packages/serilog.sinks.periodicbatching?groupby=Version">587,065</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">60</td>
+                        <td><a href="/packages/elasticsearch.net/">elasticsearch.net</a></td>
+                        <td><a href="/stats/packages/elasticsearch.net?groupby=Version">582,307</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">61</td>
+                        <td><a href="/packages/selenium.webdriver/">selenium.webdriver</a></td>
+                        <td><a href="/stats/packages/selenium.webdriver?groupby=Version">582,267</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">62</td>
+                        <td><a href="/packages/nsubstitute/">nsubstitute</a></td>
+                        <td><a href="/stats/packages/nsubstitute?groupby=Version">565,203</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">63</td>
+                        <td><a href="/packages/csvhelper/">csvhelper</a></td>
+                        <td><a href="/stats/packages/csvhelper?groupby=Version">559,763</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">64</td>
+                        <td><a href="/packages/mongodb.bson/">mongodb.bson</a></td>
+                        <td><a href="/stats/packages/mongodb.bson?groupby=Version">552,063</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">65</td>
+                        <td><a href="/packages/serilog.sinks.rollingfile/">serilog.sinks.rollingfile</a></td>
+                        <td><a href="/stats/packages/serilog.sinks.rollingfile?groupby=Version">547,871</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">66</td>
+                        <td><a href="/packages/microsoft.aspnetcore.mvc.analyzers/">microsoft.aspnetcore.mvc.analyzers</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.mvc.analyzers?groupby=Version">536,164</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">67</td>
+                        <td><a href="/packages/stylecop.analyzers/">stylecop.analyzers</a></td>
+                        <td><a href="/stats/packages/stylecop.analyzers?groupby=Version">532,348</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">68</td>
+                        <td><a href="/packages/system.interactive.async/">system.interactive.async</a></td>
+                        <td><a href="/stats/packages/system.interactive.async?groupby=Version">519,522</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">69</td>
+                        <td><a href="/packages/mongodb.driver.core/">mongodb.driver.core</a></td>
+                        <td><a href="/stats/packages/mongodb.driver.core?groupby=Version">518,563</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">70</td>
+                        <td><a href="/packages/mongodb.driver/">mongodb.driver</a></td>
+                        <td><a href="/stats/packages/mongodb.driver?groupby=Version">516,594</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">71</td>
+                        <td><a href="/packages/sharpziplib/">sharpziplib</a></td>
+                        <td><a href="/stats/packages/sharpziplib?groupby=Version">502,760</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">72</td>
+                        <td><a href="/packages/swashbuckle/">swashbuckle</a></td>
+                        <td><a href="/stats/packages/swashbuckle?groupby=Version">498,986</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">73</td>
+                        <td><a href="/packages/autofixture/">autofixture</a></td>
+                        <td><a href="/stats/packages/autofixture?groupby=Version">477,523</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">74</td>
+                        <td><a href="/packages/sqlitepclraw.core/">sqlitepclraw.core</a></td>
+                        <td><a href="/stats/packages/sqlitepclraw.core?groupby=Version">467,278</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">75</td>
+                        <td><a href="/packages/serilog.aspnetcore/">serilog.aspnetcore</a></td>
+                        <td><a href="/stats/packages/serilog.aspnetcore?groupby=Version">457,948</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">76</td>
+                        <td><a href="/packages/google.apis.core/">google.apis.core</a></td>
+                        <td><a href="/stats/packages/google.apis.core?groupby=Version">456,685</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">77</td>
+                        <td><a href="/packages/microsoft.aspnetcore.app/">microsoft.aspnetcore.app</a></td>
+                        <td><a href="/stats/packages/microsoft.aspnetcore.app?groupby=Version">455,602</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">78</td>
+                        <td><a href="/packages/protobuf-net/">protobuf-net</a></td>
+                        <td><a href="/stats/packages/protobuf-net?groupby=Version">453,735</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">79</td>
+                        <td><a href="/packages/serilog.settings.configuration/">serilog.settings.configuration</a></td>
+                        <td><a href="/stats/packages/serilog.settings.configuration?groupby=Version">451,094</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">80</td>
+                        <td><a href="/packages/google.protobuf/">google.protobuf</a></td>
+                        <td><a href="/stats/packages/google.protobuf?groupby=Version">451,005</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">81</td>
+                        <td><a href="/packages/google.apis/">google.apis</a></td>
+                        <td><a href="/stats/packages/google.apis?groupby=Version">447,778</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">82</td>
+                        <td><a href="/packages/selenium.support/">selenium.support</a></td>
+                        <td><a href="/stats/packages/selenium.support?groupby=Version">446,500</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">83</td>
+                        <td><a href="/packages/google.apis.auth/">google.apis.auth</a></td>
+                        <td><a href="/stats/packages/google.apis.auth?groupby=Version">442,909</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">84</td>
+                        <td><a href="/packages/sqlitepclraw.bundle_green/">sqlitepclraw.bundle_green</a></td>
+                        <td><a href="/stats/packages/sqlitepclraw.bundle_green?groupby=Version">430,281</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">85</td>
+                        <td><a href="/packages/microsoft.diagnostics.tracing.eventsource.redist/">microsoft.diagnostics.tracing.eventsource.redist</a></td>
+                        <td><a href="/stats/packages/microsoft.diagnostics.tracing.eventsource.redist?groupby=Version">427,631</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">86</td>
+                        <td><a href="/packages/hangfire.core/">hangfire.core</a></td>
+                        <td><a href="/stats/packages/hangfire.core?groupby=Version">424,809</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">87</td>
+                        <td><a href="/packages/commandlineparser/">commandlineparser</a></td>
+                        <td><a href="/stats/packages/commandlineparser?groupby=Version">423,793</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">88</td>
+                        <td><a href="/packages/xunit.runner.console/">xunit.runner.console</a></td>
+                        <td><a href="/stats/packages/xunit.runner.console?groupby=Version">423,056</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">89</td>
+                        <td><a href="/packages/documentformat.openxml/">documentformat.openxml</a></td>
+                        <td><a href="/stats/packages/documentformat.openxml?groupby=Version">420,224</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">90</td>
+                        <td><a href="/packages/automapper.extensions.microsoft.dependencyinjection/">automapper.extensions.microsoft.dependencyinjection</a></td>
+                        <td><a href="/stats/packages/automapper.extensions.microsoft.dependencyinjection?groupby=Version">410,003</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">91</td>
+                        <td><a href="/packages/autofac.extensions.dependencyinjection/">autofac.extensions.dependencyinjection</a></td>
+                        <td><a href="/stats/packages/autofac.extensions.dependencyinjection?groupby=Version">406,347</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">92</td>
+                        <td><a href="/packages/nodatime/">nodatime</a></td>
+                        <td><a href="/stats/packages/nodatime?groupby=Version">405,601</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">93</td>
+                        <td><a href="/packages/nunit.consolerunner/">nunit.consolerunner</a></td>
+                        <td><a href="/stats/packages/nunit.consolerunner?groupby=Version">402,484</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">94</td>
+                        <td><a href="/packages/sqlitepclraw.lib.e_sqlite3.osx/">sqlitepclraw.lib.e_sqlite3.osx</a></td>
+                        <td><a href="/stats/packages/sqlitepclraw.lib.e_sqlite3.osx?groupby=Version">402,031</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">95</td>
+                        <td><a href="/packages/sqlitepclraw.lib.e_sqlite3.v110_xp/">sqlitepclraw.lib.e_sqlite3.v110_xp</a></td>
+                        <td><a href="/stats/packages/sqlitepclraw.lib.e_sqlite3.v110_xp?groupby=Version">402,002</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">96</td>
+                        <td><a href="/packages/sqlitepclraw.lib.e_sqlite3.linux/">sqlitepclraw.lib.e_sqlite3.linux</a></td>
+                        <td><a href="/stats/packages/sqlitepclraw.lib.e_sqlite3.linux?groupby=Version">401,855</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">97</td>
+                        <td><a href="/packages/epplus/">epplus</a></td>
+                        <td><a href="/stats/packages/epplus?groupby=Version">390,130</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">98</td>
+                        <td><a href="/packages/portable.bouncycastle/">portable.bouncycastle</a></td>
+                        <td><a href="/stats/packages/portable.bouncycastle?groupby=Version">389,207</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">99</td>
+                        <td><a href="/packages/octopack/">octopack</a></td>
+                        <td><a href="/stats/packages/octopack?groupby=Version">388,620</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">100</td>
+                        <td><a href="/packages/common.logging/">common.logging</a></td>
+                        <td><a href="/stats/packages/common.logging?groupby=Version">386,092</a></td>
+                    </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="last-updated">
+                    Statistics last updated <span data-datetime="2018-10-04T12:30:44.0000000Z">Thursday, October 4, 2018 12:30 PM</span>.
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="footer-heading"><a href="/policies/Contact">Contact</a></span>
+                <p>
+                    Got questions about NuGet or the NuGet Gallery?
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <span class="footer-heading"><a href="https://status.nuget.org/">Status</a></span>
+                <p>
+                    Find out the service status of NuGet.org and its related services.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <span class="footer-heading">
+                    <a href="https://docs.microsoft.com/en-us/nuget/policies/nuget-faq">
+                        <abbr title="Frequently Asked Questions">FAQ</abbr>
+                    </a>
+                </span>
+                <p>
+                    Read the Frequently Asked Questions about NuGet and see if your question made the list.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 row-gap">
+                <img alt="" aria-hidden="true" width="184" height="57"
+                     src="/Content/gallery/img/logo-footer.svg"
+                     onerror="this.src='https://www.nuget.org/Content/gallery/img/logo-footer-184x57.png'; this.onerror = null;"
+                />
+            </div>
+            <div class="col-md-9 row-gap">
+                <div class="row">
+                    <div class="col-md-12 footer-release-info">
+                        <p>
+                            &#169; Microsoft 2018 -
+                            <a href="/policies/About">About</a> -
+                            <a href="/policies/Terms">Terms of Use</a> -
+                            <a href="https://go.microsoft.com/fwlink/?LinkId=521839">Privacy Policy</a>
+                            - <a href="https://www.microsoft.com/trademarks">Trademarks</a>
+                            <br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+        This is the NuGet Gallery version 4.4.4-master.
+            Deployed from 5f3979a Link: https://www.github.com/NuGet/NuGetGallery/commit/5f3979a
+            Built on master Link: https://www.github.com/NuGet/NuGetGallery/tree/master
+            Built on 2018-09-27T23:51:40.0000000+00:00
+        You are on NuGetGallery_IN_5.
+    -->
+
+</footer>
+
+<script src="/Scripts/gallery/site.min.js?v=TUBGRf-bRBGIWRyW1u_tgpbTIPoxeENiMj_-a4r5Y6o1"></script>
+
+
+<script>
+    $(function () {
+        'use strict';
+
+        var viewModel = {
+            showAllPackageDownloads: ko.observable(false),
+        };
+
+        ko.applyBindings(viewModel);
+    });
+</script>
+
+</body>
+</html>

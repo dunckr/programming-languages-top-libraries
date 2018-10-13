@@ -1,0 +1,1052 @@
+{
+  "csharp": [
+    {
+      "name": "newtonsoft.json",
+      "url": "/packages/newtonsoft.json/",
+      "downloads": "152663969"
+    },
+    {
+      "name": "microsoft.extensions.logging.abstractions",
+      "url": "/packages/microsoft.extensions.logging.abstractions/",
+      "downloads": "51167420"
+    },
+    {
+      "name": "microsoft.aspnetcore.hosting.server.abstractions",
+      "url": "/packages/microsoft.aspnetcore.hosting.server.abstractions/",
+      "downloads": "50384623"
+    },
+    {
+      "name": "microsoft.aspnetcore.hosting.abstractions",
+      "url": "/packages/microsoft.aspnetcore.hosting.abstractions/",
+      "downloads": "50755862"
+    },
+    {
+      "name": "microsoft.extensions.configuration.abstractions",
+      "url": "/packages/microsoft.extensions.configuration.abstractions/",
+      "downloads": "49893687"
+    },
+    {
+      "name": "microsoft.aspnetcore.http.features",
+      "url": "/packages/microsoft.aspnetcore.http.features/",
+      "downloads": "49177152"
+    },
+    {
+      "name": "microsoft.aspnetcore.http.abstractions",
+      "url": "/packages/microsoft.aspnetcore.http.abstractions/",
+      "downloads": "48856725"
+    },
+    {
+      "name": "microsoft.extensions.options",
+      "url": "/packages/microsoft.extensions.options/",
+      "downloads": "47645681"
+    },
+    {
+      "name": "microsoft.extensions.primitives",
+      "url": "/packages/microsoft.extensions.primitives/",
+      "downloads": "48289795"
+    },
+    {
+      "name": "microsoft.extensions.dependencyinjection.abstractions",
+      "url": "/packages/microsoft.extensions.dependencyinjection.abstractions/",
+      "downloads": "46690337"
+    },
+    {
+      "name": "microsoft.net.http.headers",
+      "url": "/packages/microsoft.net.http.headers/",
+      "downloads": "47646012"
+    },
+    {
+      "name": "microsoft.extensions.fileproviders.abstractions",
+      "url": "/packages/microsoft.extensions.fileproviders.abstractions/",
+      "downloads": "43919246"
+    },
+    {
+      "name": "microsoft.aspnetcore.http.extensions",
+      "url": "/packages/microsoft.aspnetcore.http.extensions/",
+      "downloads": "45307368"
+    },
+    {
+      "name": "microsoft.aspnetcore.webutilities",
+      "url": "/packages/microsoft.aspnetcore.webutilities/",
+      "downloads": "45136580"
+    },
+    {
+      "name": "microsoft.aspnetcore.http",
+      "url": "/packages/microsoft.aspnetcore.http/",
+      "downloads": "44366545"
+    },
+    {
+      "name": "microsoft.extensions.logging",
+      "url": "/packages/microsoft.extensions.logging/",
+      "downloads": "38992776"
+    },
+    {
+      "name": "microsoft.netcore.platforms",
+      "url": "/packages/microsoft.netcore.platforms/",
+      "downloads": "52943991"
+    },
+    {
+      "name": "microsoft.extensions.configuration",
+      "url": "/packages/microsoft.extensions.configuration/",
+      "downloads": "38422459"
+    },
+    {
+      "name": "microsoft.extensions.dependencymodel",
+      "url": "/packages/microsoft.extensions.dependencymodel/",
+      "downloads": "33134599"
+    },
+    {
+      "name": "system.net.http",
+      "url": "/packages/system.net.http/",
+      "downloads": "50226222"
+    },
+    {
+      "name": "system.diagnostics.diagnosticsource",
+      "url": "/packages/system.diagnostics.diagnosticsource/",
+      "downloads": "42461501"
+    },
+    {
+      "name": "microsoft.extensions.objectpool",
+      "url": "/packages/microsoft.extensions.objectpool/",
+      "downloads": "36094158"
+    },
+    {
+      "name": "system.componentmodel.annotations",
+      "url": "/packages/system.componentmodel.annotations/",
+      "downloads": "32646147"
+    },
+    {
+      "name": "microsoft.extensions.filesystemglobbing",
+      "url": "/packages/microsoft.extensions.filesystemglobbing/",
+      "downloads": "36243128"
+    },
+    {
+      "name": "system.text.encodings.web",
+      "url": "/packages/system.text.encodings.web/",
+      "downloads": "36145770"
+    },
+    {
+      "name": "system.threading.tasks.extensions",
+      "url": "/packages/system.threading.tasks.extensions/",
+      "downloads": "32839616"
+    },
+    {
+      "name": "microsoft.aspnetcore.mvc.abstractions",
+      "url": "/packages/microsoft.aspnetcore.mvc.abstractions/",
+      "downloads": "24460938"
+    },
+    {
+      "name": "microsoft.extensions.fileproviders.physical",
+      "url": "/packages/microsoft.extensions.fileproviders.physical/",
+      "downloads": "35619443"
+    },
+    {
+      "name": "microsoft.aspnetcore.mvc.core",
+      "url": "/packages/microsoft.aspnetcore.mvc.core/",
+      "downloads": "24454749"
+    },
+    {
+      "name": "system.collections.immutable",
+      "url": "/packages/system.collections.immutable/",
+      "downloads": "37529155"
+    },
+    {
+      "name": "system.linq.expressions",
+      "url": "/packages/system.linq.expressions/",
+      "downloads": "44016900"
+    },
+    {
+      "name": "microsoft.aspnetcore.authorization",
+      "url": "/packages/microsoft.aspnetcore.authorization/",
+      "downloads": "23034188"
+    },
+    {
+      "name": "microsoft.netcore.targets",
+      "url": "/packages/microsoft.netcore.targets/",
+      "downloads": "44614161"
+    },
+    {
+      "name": "microsoft.aspnetcore.routing.abstractions",
+      "url": "/packages/microsoft.aspnetcore.routing.abstractions/",
+      "downloads": "24455488"
+    },
+    {
+      "name": "microsoft.extensions.dependencyinjection",
+      "url": "/packages/microsoft.extensions.dependencyinjection/",
+      "downloads": "34534634"
+    },
+    {
+      "name": "netstandard.library",
+      "url": "/packages/netstandard.library/",
+      "downloads": "36964505"
+    },
+    {
+      "name": "system.security.principal.windows",
+      "url": "/packages/system.security.principal.windows/",
+      "downloads": "29740369"
+    },
+    {
+      "name": "microsoft.aspnetcore.mvc.formatters.json",
+      "url": "/packages/microsoft.aspnetcore.mvc.formatters.json/",
+      "downloads": "23108669"
+    },
+    {
+      "name": "microsoft.aspnetcore.routing",
+      "url": "/packages/microsoft.aspnetcore.routing/",
+      "downloads": "22930445"
+    },
+    {
+      "name": "system.componentmodel",
+      "url": "/packages/system.componentmodel/",
+      "downloads": "35379548"
+    },
+    {
+      "name": "microsoft.netcore.app",
+      "url": "/packages/microsoft.netcore.app/",
+      "downloads": "29806847"
+    },
+    {
+      "name": "microsoft.netcore.dotnethostpolicy",
+      "url": "/packages/microsoft.netcore.dotnethostpolicy/",
+      "downloads": "28925433"
+    },
+    {
+      "name": "system.reflection.metadata",
+      "url": "/packages/system.reflection.metadata/",
+      "downloads": "34855061"
+    },
+    {
+      "name": "microsoft.aspnetcore.mvc.dataannotations",
+      "url": "/packages/microsoft.aspnetcore.mvc.dataannotations/",
+      "downloads": "22788420"
+    },
+    {
+      "name": "system.runtime.compilerservices.unsafe",
+      "url": "/packages/system.runtime.compilerservices.unsafe/",
+      "downloads": "18559918"
+    },
+    {
+      "name": "system.security.cryptography.x509certificates",
+      "url": "/packages/system.security.cryptography.x509certificates/",
+      "downloads": "40518232"
+    },
+    {
+      "name": "microsoft.win32.registry",
+      "url": "/packages/microsoft.win32.registry/",
+      "downloads": "30336388"
+    },
+    {
+      "name": "microsoft.aspnetcore.mvc.apiexplorer",
+      "url": "/packages/microsoft.aspnetcore.mvc.apiexplorer/",
+      "downloads": "21758665"
+    },
+    {
+      "name": "castle.core",
+      "url": "/packages/castle.core/",
+      "downloads": "30924057"
+    },
+    {
+      "name": "system.net.requests",
+      "url": "/packages/system.net.requests/",
+      "downloads": "32026872"
+    },
+    {
+      "name": "system.buffers",
+      "url": "/packages/system.buffers/",
+      "downloads": "30230099"
+    },
+    {
+      "name": "microsoft.netcore.dotnethostresolver",
+      "url": "/packages/microsoft.netcore.dotnethostresolver/",
+      "downloads": "25600994"
+    },
+    {
+      "name": "microsoft.extensions.configuration.environmentvariables",
+      "url": "/packages/microsoft.extensions.configuration.environmentvariables/",
+      "downloads": "30364374"
+    },
+    {
+      "name": "microsoft.aspnetcore.server.kestrel",
+      "url": "/packages/microsoft.aspnetcore.server.kestrel/",
+      "downloads": "30537711"
+    },
+    {
+      "name": "microsoft.extensions.hosting.abstractions",
+      "url": "/packages/microsoft.extensions.hosting.abstractions/",
+      "downloads": "13362816"
+    },
+    {
+      "name": "microsoft.aspnetcore.hosting",
+      "url": "/packages/microsoft.aspnetcore.hosting/",
+      "downloads": "33137816"
+    },
+    {
+      "name": "microsoft.extensions.webencoders",
+      "url": "/packages/microsoft.extensions.webencoders/",
+      "downloads": "22389209"
+    },
+    {
+      "name": "microsoft.extensions.caching.abstractions",
+      "url": "/packages/microsoft.extensions.caching.abstractions/",
+      "downloads": "18489150"
+    },
+    {
+      "name": "microsoft.dotnet.platformabstractions",
+      "url": "/packages/microsoft.dotnet.platformabstractions/",
+      "downloads": "23588384"
+    },
+    {
+      "name": "microsoft.csharp",
+      "url": "/packages/microsoft.csharp/",
+      "downloads": "31211187"
+    },
+    {
+      "name": "system.reflection.typeextensions",
+      "url": "/packages/system.reflection.typeextensions/",
+      "downloads": "33611582"
+    },
+    {
+      "name": "microsoft.extensions.caching.memory",
+      "url": "/packages/microsoft.extensions.caching.memory/",
+      "downloads": "18062982"
+    },
+    {
+      "name": "system.numerics.vectors",
+      "url": "/packages/system.numerics.vectors/",
+      "downloads": "26340329"
+    },
+    {
+      "name": "microsoft.extensions.localization.abstractions",
+      "url": "/packages/microsoft.extensions.localization.abstractions/",
+      "downloads": "21155442"
+    },
+    {
+      "name": "microsoft.extensions.localization",
+      "url": "/packages/microsoft.extensions.localization/",
+      "downloads": "21137586"
+    },
+    {
+      "name": "system.net.webheadercollection",
+      "url": "/packages/system.net.webheadercollection/",
+      "downloads": "26233993"
+    },
+    {
+      "name": "system.security.claims",
+      "url": "/packages/system.security.claims/",
+      "downloads": "28941825"
+    },
+    {
+      "name": "moq",
+      "url": "/packages/moq/",
+      "downloads": "36064123"
+    },
+    {
+      "name": "system.threading.overlapped",
+      "url": "/packages/system.threading.overlapped/",
+      "downloads": "28879653"
+    },
+    {
+      "name": "microsoft.aspnet.webapi.client",
+      "url": "/packages/microsoft.aspnet.webapi.client/",
+      "downloads": "47540567"
+    },
+    {
+      "name": "system.linq.queryable",
+      "url": "/packages/system.linq.queryable/",
+      "downloads": "31003391"
+    },
+    {
+      "name": "system.runtime",
+      "url": "/packages/system.runtime/",
+      "downloads": "44731374"
+    },
+    {
+      "name": "runtime.native.system.security.cryptography",
+      "url": "/packages/runtime.native.system.security.cryptography/",
+      "downloads": "33957407"
+    },
+    {
+      "name": "system.valuetuple",
+      "url": "/packages/system.valuetuple/",
+      "downloads": "17561162"
+    },
+    {
+      "name": "system.security.cryptography.algorithms",
+      "url": "/packages/system.security.cryptography.algorithms/",
+      "downloads": "33649249"
+    },
+    {
+      "name": "system.runtime.extensions",
+      "url": "/packages/system.runtime.extensions/",
+      "downloads": "42566935"
+    },
+    {
+      "name": "system.diagnostics.debug",
+      "url": "/packages/system.diagnostics.debug/",
+      "downloads": "42409062"
+    },
+    {
+      "name": "microsoft.extensions.configuration.fileextensions",
+      "url": "/packages/microsoft.extensions.configuration.fileextensions/",
+      "downloads": "18636156"
+    },
+    {
+      "name": "system.globalization",
+      "url": "/packages/system.globalization/",
+      "downloads": "42683951"
+    },
+    {
+      "name": "system.collections",
+      "url": "/packages/system.collections/",
+      "downloads": "42832504"
+    },
+    {
+      "name": "system.linq",
+      "url": "/packages/system.linq/",
+      "downloads": "38720867"
+    },
+    {
+      "name": "system.threading.thread",
+      "url": "/packages/system.threading.thread/",
+      "downloads": "26058067"
+    },
+    {
+      "name": "system.text.encoding.codepages",
+      "url": "/packages/system.text.encoding.codepages/",
+      "downloads": "24191573"
+    },
+    {
+      "name": "system.reflection",
+      "url": "/packages/system.reflection/",
+      "downloads": "42675741"
+    },
+    {
+      "name": "libuv",
+      "url": "/packages/libuv/",
+      "downloads": "33374368"
+    },
+    {
+      "name": "system.threading",
+      "url": "/packages/system.threading/",
+      "downloads": "42222164"
+    },
+    {
+      "name": "system.io",
+      "url": "/packages/system.io/",
+      "downloads": "42041626"
+    },
+    {
+      "name": "system.resources.resourcemanager",
+      "url": "/packages/system.resources.resourcemanager/",
+      "downloads": "38760635"
+    },
+    {
+      "name": "microsoft.codeanalysis.common",
+      "url": "/packages/microsoft.codeanalysis.common/",
+      "downloads": "26313422"
+    },
+    {
+      "name": "microsoft.codeanalysis.csharp",
+      "url": "/packages/microsoft.codeanalysis.csharp/",
+      "downloads": "26345096"
+    },
+    {
+      "name": "system.xml.xpath",
+      "url": "/packages/system.xml.xpath/",
+      "downloads": "24090421"
+    },
+    {
+      "name": "system.net.websockets",
+      "url": "/packages/system.net.websockets/",
+      "downloads": "28304338"
+    },
+    {
+      "name": "system.diagnostics.tracesource",
+      "url": "/packages/system.diagnostics.tracesource/",
+      "downloads": "17808277"
+    },
+    {
+      "name": "system.identitymodel.tokens.jwt",
+      "url": "/packages/system.identitymodel.tokens.jwt/",
+      "downloads": "23050540"
+    },
+    {
+      "name": "system.runtime.loader",
+      "url": "/packages/system.runtime.loader/",
+      "downloads": "23992673"
+    },
+    {
+      "name": "system.threading.tasks",
+      "url": "/packages/system.threading.tasks/",
+      "downloads": "41671750"
+    },
+    {
+      "name": "microsoft.extensions.configuration.binder",
+      "url": "/packages/microsoft.extensions.configuration.binder/",
+      "downloads": "14545041"
+    },
+    {
+      "name": "system.text.encoding",
+      "url": "/packages/system.text.encoding/",
+      "downloads": "41175901"
+    },
+    {
+      "name": "system.reflection.extensions",
+      "url": "/packages/system.reflection.extensions/",
+      "downloads": "36723937"
+    },
+    {
+      "name": "microsoft.extensions.configuration.json",
+      "url": "/packages/microsoft.extensions.configuration.json/",
+      "downloads": "17864902"
+    }
+  ],
+  "javascript": [
+    {
+      "name": "lodash",
+      "downloads": 0
+    },
+    {
+      "name": "request",
+      "downloads": 0
+    },
+    {
+      "name": "chalk",
+      "downloads": 0
+    },
+    {
+      "name": "react",
+      "downloads": 0
+    },
+    {
+      "name": "express",
+      "downloads": 0
+    },
+    {
+      "name": "commander",
+      "downloads": 0
+    },
+    {
+      "name": "async",
+      "downloads": 0
+    },
+    {
+      "name": "moment",
+      "downloads": 0
+    },
+    {
+      "name": "bluebird",
+      "downloads": 0
+    },
+    {
+      "name": "debug",
+      "downloads": 0
+    },
+    {
+      "name": "prop-types",
+      "downloads": 0
+    },
+    {
+      "name": "react-dom",
+      "downloads": 0
+    },
+    {
+      "name": "underscore",
+      "downloads": 0
+    },
+    {
+      "name": "fs-extra",
+      "downloads": 0
+    },
+    {
+      "name": "mkdirp",
+      "downloads": 0
+    },
+    {
+      "name": "babel-runtime",
+      "downloads": 0
+    },
+    {
+      "name": "uuid",
+      "downloads": 0
+    },
+    {
+      "name": "body-parser",
+      "downloads": 0
+    },
+    {
+      "name": "glob",
+      "downloads": 0
+    },
+    {
+      "name": "colors",
+      "downloads": 0
+    },
+    {
+      "name": "classnames",
+      "downloads": 0
+    },
+    {
+      "name": "axios",
+      "downloads": 0
+    },
+    {
+      "name": "yargs",
+      "downloads": 0
+    },
+    {
+      "name": "jquery",
+      "downloads": 0
+    },
+    {
+      "name": "webpack",
+      "downloads": 0
+    },
+    {
+      "name": "minimist",
+      "downloads": 0
+    },
+    {
+      "name": "rxjs",
+      "downloads": 0
+    },
+    {
+      "name": "babel-core",
+      "downloads": 0
+    },
+    {
+      "name": "through2",
+      "downloads": 0
+    },
+    {
+      "name": "yeoman-generator",
+      "downloads": 0
+    },
+    {
+      "name": "tslib",
+      "downloads": 0
+    },
+    {
+      "name": "q",
+      "downloads": 0
+    },
+    {
+      "name": "inquirer",
+      "downloads": 0
+    },
+    {
+      "name": "vue",
+      "downloads": 0
+    },
+    {
+      "name": "aws-sdk",
+      "downloads": 0
+    },
+    {
+      "name": "cheerio",
+      "downloads": 0
+    }
+  ],
+  "php": [
+    {
+      "name": "symfony/polyfill-mbstring",
+      "url": "/packages/symfony/polyfill-mbstring",
+      "downloads": 65632
+    },
+    {
+      "name": "psr/log",
+      "url": "/packages/psr/log",
+      "downloads": 64840
+    },
+    {
+      "name": "symfony/console",
+      "url": "/packages/symfony/console",
+      "downloads": 54856
+    },
+    {
+      "name": "symfony/event-dispatcher",
+      "url": "/packages/symfony/event-dispatcher",
+      "downloads": 57629
+    },
+    {
+      "name": "symfony/debug",
+      "url": "/packages/symfony/debug",
+      "downloads": 48192
+    },
+    {
+      "name": "symfony/finder",
+      "url": "/packages/symfony/finder",
+      "downloads": 59300
+    },
+    {
+      "name": "doctrine/instantiator",
+      "url": "/packages/doctrine/instantiator",
+      "downloads": 54313
+    },
+    {
+      "name": "psr/http-message",
+      "url": "/packages/psr/http-message",
+      "downloads": 40167
+    },
+    {
+      "name": "monolog/monolog",
+      "url": "/packages/monolog/monolog",
+      "downloads": 56557
+    },
+    {
+      "name": "symfony/process",
+      "url": "/packages/symfony/process",
+      "downloads": 74393
+    },
+    {
+      "name": "paragonie/random_compat",
+      "url": "/packages/paragonie/random_compat",
+      "downloads": 47774
+    },
+    {
+      "name": "symfony/polyfill-ctype",
+      "url": "/packages/symfony/polyfill-ctype",
+      "downloads": 75594
+    },
+    {
+      "name": "guzzlehttp/psr7",
+      "url": "/packages/guzzlehttp/psr7",
+      "downloads": 59207
+    },
+    {
+      "name": "guzzlehttp/guzzle",
+      "url": "/packages/guzzlehttp/guzzle",
+      "downloads": 142510
+    },
+    {
+      "name": "doctrine/inflector",
+      "url": "/packages/doctrine/inflector",
+      "downloads": 46370
+    }
+  ],
+  "python": [
+    {
+      "name": "pip",
+      "downloads": "1895923"
+    },
+    {
+      "name": "urllib3",
+      "downloads": "1075572"
+    },
+    {
+      "name": "botocore",
+      "downloads": "787580"
+    },
+    {
+      "name": "six",
+      "downloads": "760207"
+    },
+    {
+      "name": "python-dateutil",
+      "downloads": "729187"
+    },
+    {
+      "name": "s3transfer",
+      "downloads": "694476"
+    },
+    {
+      "name": "docutils",
+      "downloads": "645619"
+    },
+    {
+      "name": "wheel",
+      "downloads": "633411"
+    },
+    {
+      "name": "setuptools",
+      "downloads": "630039"
+    },
+    {
+      "name": "colorama",
+      "downloads": "628838"
+    },
+    {
+      "name": "pyyaml",
+      "downloads": "616255"
+    },
+    {
+      "name": "pyasn1",
+      "downloads": "609258"
+    },
+    {
+      "name": "jmespath",
+      "downloads": "605346"
+    },
+    {
+      "name": "rsa",
+      "downloads": "559630"
+    },
+    {
+      "name": "awscli",
+      "downloads": "559147"
+    },
+    {
+      "name": "futures",
+      "downloads": "558559"
+    },
+    {
+      "name": "requests",
+      "downloads": "535677"
+    },
+    {
+      "name": "certifi",
+      "downloads": "530746"
+    },
+    {
+      "name": "simplejson",
+      "downloads": "492650"
+    },
+    {
+      "name": "idna",
+      "downloads": "409124"
+    },
+    {
+      "name": "pip",
+      "downloads": "15162769"
+    },
+    {
+      "name": "urllib3",
+      "downloads": "10225431"
+    },
+    {
+      "name": "botocore",
+      "downloads": "7908253"
+    },
+    {
+      "name": "six",
+      "downloads": "7842996"
+    },
+    {
+      "name": "python-dateutil",
+      "downloads": "7441563"
+    },
+    {
+      "name": "s3transfer",
+      "downloads": "6679348"
+    },
+    {
+      "name": "pyyaml",
+      "downloads": "6371868"
+    },
+    {
+      "name": "docutils",
+      "downloads": "6217218"
+    },
+    {
+      "name": "setuptools",
+      "downloads": "6046290"
+    },
+    {
+      "name": "pyasn1",
+      "downloads": "5904658"
+    },
+    {
+      "name": "wheel",
+      "downloads": "5863961"
+    },
+    {
+      "name": "jmespath",
+      "downloads": "5771108"
+    },
+    {
+      "name": "requests",
+      "downloads": "5714528"
+    },
+    {
+      "name": "certifi",
+      "downloads": "5620829"
+    },
+    {
+      "name": "colorama",
+      "downloads": "5505716"
+    },
+    {
+      "name": "rsa",
+      "downloads": "5254815"
+    },
+    {
+      "name": "awscli",
+      "downloads": "5154407"
+    },
+    {
+      "name": "futures",
+      "downloads": "5131658"
+    },
+    {
+      "name": "simplejson",
+      "downloads": "5123396"
+    },
+    {
+      "name": "idna",
+      "downloads": "4841731"
+    },
+    {
+      "name": "pip",
+      "downloads": "65867111"
+    },
+    {
+      "name": "urllib3",
+      "downloads": "44252594"
+    },
+    {
+      "name": "six",
+      "downloads": "34623894"
+    },
+    {
+      "name": "botocore",
+      "downloads": "33774841"
+    },
+    {
+      "name": "python-dateutil",
+      "downloads": "31478822"
+    },
+    {
+      "name": "s3transfer",
+      "downloads": "28826154"
+    },
+    {
+      "name": "pyyaml",
+      "downloads": "26922112"
+    },
+    {
+      "name": "setuptools",
+      "downloads": "26262519"
+    },
+    {
+      "name": "docutils",
+      "downloads": "26086655"
+    },
+    {
+      "name": "pyasn1",
+      "downloads": "25022664"
+    },
+    {
+      "name": "requests",
+      "downloads": "24642894"
+    },
+    {
+      "name": "jmespath",
+      "downloads": "24402556"
+    },
+    {
+      "name": "certifi",
+      "downloads": "23852052"
+    },
+    {
+      "name": "futures",
+      "downloads": "22621272"
+    },
+    {
+      "name": "rsa",
+      "downloads": "22167236"
+    },
+    {
+      "name": "colorama",
+      "downloads": "22053231"
+    },
+    {
+      "name": "awscli",
+      "downloads": "21757120"
+    },
+    {
+      "name": "idna",
+      "downloads": "21518296"
+    },
+    {
+      "name": "simplejson",
+      "downloads": "20471518"
+    },
+    {
+      "name": "wheel",
+      "downloads": "20106880"
+    }
+  ],
+  "ruby": [
+    {
+      "name": "activemodel",
+      "downloads": "95894"
+    },
+    {
+      "name": "actionpack",
+      "downloads": "83159"
+    },
+    {
+      "name": "actionmailer",
+      "downloads": "80053"
+    },
+    {
+      "name": "actionview",
+      "downloads": "76076"
+    },
+    {
+      "name": "activejob",
+      "downloads": "71648"
+    },
+    {
+      "name": "actioncable",
+      "downloads": "39172"
+    },
+    {
+      "name": "active_model_serializers",
+      "downloads": "14068"
+    },
+    {
+      "name": "aasm",
+      "downloads": "7515"
+    },
+    {
+      "name": "activemodel-serializers-xml",
+      "downloads": "5832"
+    },
+    {
+      "name": "activeadmin",
+      "downloads": "3532"
+    },
+    {
+      "name": "activemerchant",
+      "downloads": "2466"
+    },
+    {
+      "name": "abstract_type",
+      "downloads": "1770"
+    },
+    {
+      "name": "actionpack-action_caching",
+      "downloads": "1637"
+    },
+    {
+      "name": "active_attr",
+      "downloads": "1057"
+    },
+    {
+      "name": "active_link_to",
+      "downloads": "1051"
+    },
+    {
+      "name": "actionpack-xml_parser",
+      "downloads": "1021"
+    },
+    {
+      "name": "actionpack-page_caching",
+      "downloads": "859"
+    },
+    {
+      "name": "active_hash",
+      "downloads": "809"
+    },
+    {
+      "name": "ace-rails-ap",
+      "downloads": "590"
+    },
+    {
+      "name": "activeadmin_addons",
+      "downloads": "588"
+    }
+  ]
+}
+
